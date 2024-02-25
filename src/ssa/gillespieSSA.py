@@ -50,9 +50,9 @@ class Gillespie():
         sim = [self._species.copy()]
         sim.extend([self.react(r) for r in samples4react])
         
-        if timesteps[-1] < self._timesteps:
-            sim.append(self._species.copy())
-            timesteps.append(self._timesteps)
+        # if timesteps[-1] < self._timesteps:
+        #     sim.append(self._species.copy())
+        #     timesteps.append(self._timesteps)
         
         return timesteps, sim
     
