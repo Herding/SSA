@@ -1,0 +1,26 @@
+[project]
+name = "SSA"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Jinbin Fan", email = "jinbinfan@foxmail.com"},
+]
+dependencies = [
+    "numpy>=1.26.4",
+    "jupyterlab>=4.1.2",
+    "plotly>=5.19.0",
+    "pandas>=2.2.1",
+]
+requires-python = "==3.12.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
+
+[[tool.pdm.source]]
+name = "pypi"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+verify_ssl = true
+include_packages = ["*"]
